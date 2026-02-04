@@ -74,20 +74,10 @@ final class RecordingViewModel: ObservableObject {
         saveNote()
     }
 
-    private func observeTranscription() {
-        Task {
-            for await _ in AsyncStream<Void> { continuation in
-                let observation = speechManager.$transcribedText.sink { [weak self] text in
-                    self?.transcribedText = text
-                }
-                continuation.onTermination = { _ in
-                    observation.cancel()
-                }
-            }
-        }
+    private var transcriptionTimer: Timer?
 
-        // Direct observation via timer for simplicity
-        Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { [weak self] timer in
+    private func observeTranscription() {
+        transcriptionTimer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { [weak self] timer in
             guard let self else {
                 timer.invalidate()
                 return
@@ -95,6 +85,7 @@ final class RecordingViewModel: ObservableObject {
             Task { @MainActor in
                 if !self.isRecording {
                     timer.invalidate()
+                    self.transcriptionTimer = nil
                     return
                 }
                 self.transcribedText = self.speechManager.transcribedText

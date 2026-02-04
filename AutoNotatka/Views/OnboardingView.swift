@@ -39,7 +39,7 @@ struct OnboardingView: View {
                     icon: "mic.fill",
                     title: "Mikrofon",
                     description: "Wymagany do nagrywania głosu",
-                    isGranted: permissionManager.microphoneStatus == .granted
+                    isGranted: permissionManager.isMicrophoneGranted
                 )
 
                 PermissionRow(
@@ -95,6 +95,11 @@ struct OnboardingView: View {
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
             }
+
+            // Author credit
+            Text("Stworzone przez Wojciecha Olszaka")
+                .font(.caption)
+                .foregroundStyle(.secondary)
 
             Spacer()
                 .frame(height: 20)

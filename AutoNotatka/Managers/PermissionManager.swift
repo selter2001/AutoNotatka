@@ -5,7 +5,7 @@ import Speech
 final class PermissionManager: ObservableObject {
     static let shared = PermissionManager()
 
-    @Published private(set) var microphoneStatus: AVAudioApplication.RecordPermission = .undetermined
+    @Published private(set) var isMicrophoneGranted: Bool = false
     @Published private(set) var speechStatus: SFSpeechRecognizerAuthorizationStatus = .notDetermined
 
     private init() {
@@ -13,15 +13,15 @@ final class PermissionManager: ObservableObject {
     }
 
     var allPermissionsGranted: Bool {
-        microphoneStatus == .granted && speechStatus == .authorized
+        isMicrophoneGranted && speechStatus == .authorized
     }
 
     var needsPermissions: Bool {
-        microphoneStatus == .undetermined || speechStatus == .notDetermined
+        !isMicrophoneGranted || speechStatus == .notDetermined
     }
 
     func refreshStatus() {
-        microphoneStatus = AVAudioApplication.shared.recordPermission
+        isMicrophoneGranted = AVAudioApplication.shared.recordPermission == .granted
         speechStatus = SFSpeechRecognizer.authorizationStatus()
     }
 
@@ -32,7 +32,7 @@ final class PermissionManager: ObservableObject {
 
     func requestMicrophonePermission() async {
         let granted = await AVAudioApplication.requestRecordPermission()
-        microphoneStatus = granted ? .granted : .denied
+        isMicrophoneGranted = granted
     }
 
     func requestSpeechPermission() async {
@@ -45,12 +45,7 @@ final class PermissionManager: ObservableObject {
     }
 
     var microphoneStatusText: String {
-        switch microphoneStatus {
-        case .undetermined: return "Nie określono"
-        case .denied: return "Odmowa"
-        case .granted: return "Przyznano"
-        @unknown default: return "Nieznany"
-        }
+        isMicrophoneGranted ? "Przyznano" : "Nie przyznano"
     }
 
     var speechStatusText: String {

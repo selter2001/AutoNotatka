@@ -65,6 +65,12 @@ struct NotesListView: View {
     }
 }
 
+// MARK: - App Info
+extension NotesListView {
+    static let appAuthor = "Wojciech Olszak"
+    static let appVersion = "1.0"
+}
+
 struct NoteRowView: View {
     let note: Note
 

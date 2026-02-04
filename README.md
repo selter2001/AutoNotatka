@@ -137,8 +137,10 @@ MIT License - zobacz plik LICENSE
 
 ## Autor
 
-Stworzone z pomocą Claude AI.
+**Wojciech Olszak**
+
+Stworzone z pomocą Claude AI (Anthropic).
 
 ---
 
-*Wersja 1.0 | 2026*
+*AutoNotatka v1.0 | 2026 | Wojciech Olszak*

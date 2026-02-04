@@ -5,7 +5,7 @@ import Speech
 final class PermissionManager: ObservableObject {
     static let shared = PermissionManager()
 
-    @Published private(set) var microphoneStatus: AVAudioSession.RecordPermission = .undetermined
+    @Published private(set) var microphoneStatus: AVAudioApplication.RecordPermission = .undetermined
     @Published private(set) var speechStatus: SFSpeechRecognizerAuthorizationStatus = .notDetermined
 
     private init() {
@@ -21,7 +21,7 @@ final class PermissionManager: ObservableObject {
     }
 
     func refreshStatus() {
-        microphoneStatus = AVAudioSession.sharedInstance().recordPermission
+        microphoneStatus = AVAudioApplication.shared.recordPermission
         speechStatus = SFSpeechRecognizer.authorizationStatus()
     }
 
@@ -31,11 +31,7 @@ final class PermissionManager: ObservableObject {
     }
 
     func requestMicrophonePermission() async {
-        let granted = await withCheckedContinuation { continuation in
-            AVAudioSession.sharedInstance().requestRecordPermission { granted in
-                continuation.resume(returning: granted)
-            }
-        }
+        let granted = await AVAudioApplication.requestRecordPermission()
         microphoneStatus = granted ? .granted : .denied
     }
 

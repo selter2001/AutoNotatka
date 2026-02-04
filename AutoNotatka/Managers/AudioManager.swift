@@ -13,11 +13,7 @@ final class AudioManager {
     }
 
     func requestPermission() async -> Bool {
-        await withCheckedContinuation { continuation in
-            audioSession.requestRecordPermission { granted in
-                continuation.resume(returning: granted)
-            }
-        }
+        await AVAudioApplication.requestRecordPermission()
     }
 
     func deactivateSession() {
@@ -25,6 +21,6 @@ final class AudioManager {
     }
 
     var isRecordingPermissionGranted: Bool {
-        audioSession.recordPermission == .granted
+        AVAudioApplication.shared.recordPermission == .granted
     }
 }

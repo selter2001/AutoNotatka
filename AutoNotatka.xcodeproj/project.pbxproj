@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		245772899A084599B9AEC06F /* DriveFolderPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F39633942B64993A8F49176 /* DriveFolderPickerViewModel.swift */; };
+		3AE7D92020E4492C8B06F8A8 /* DrivePreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F640AD95464294AAD9C341 /* DrivePreferences.swift */; };
+		8761E688E2BE43E4B6A105D9 /* DriveFolderPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880E8DA79FB747048FACB98F /* DriveFolderPickerView.swift */; };
+		A1000001 /* AutoNotatkaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001 /* AutoNotatkaApp.swift */; };
+		A1000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000002 /* ContentView.swift */; };
+		A1000003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2000003 /* Assets.xcassets */; };
+		A1000004 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000007 /* AudioManager.swift */; };
+		A1000007 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000A /* Note.swift */; };
+		A1000008 /* RecordingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000B /* RecordingViewModel.swift */; };
+		A1000009 /* RecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000C /* RecordingView.swift */; };
+		A100000A /* NotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000D /* NotesViewModel.swift */; };
+		A100000B /* NotesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000E /* NotesListView.swift */; };
+		A100000C /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000F /* NoteDetailView.swift */; };
+		A100000D /* PermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000010 /* PermissionManager.swift */; };
+		A100000E /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000011 /* OnboardingView.swift */; };
+		A100000F /* LocalStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000012 /* LocalStorageManager.swift */; };
+		A1000010 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = A9000001 /* GoogleSignIn */; };
+		A1000011 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A9000002 /* GoogleSignInSwift */; };
+		A1000012 /* GoogleAPIClientForRESTCore in Frameworks */ = {isa = PBXBuildFile; productRef = A9000003 /* GoogleAPIClientForRESTCore */; };
+		A1000013 /* GoogleAPIClientForREST_Drive in Frameworks */ = {isa = PBXBuildFile; productRef = A9000004 /* GoogleAPIClientForREST_Drive */; };
+		A1000014 /* GoogleAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000013 /* GoogleAuthManager.swift */; };
+		A1000015 /* GoogleSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000014 /* GoogleSignInView.swift */; };
+		B48D5F62ADFB4689853F1F22 /* GoogleDriveManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E90EB93B3414DDDB2649CD5 /* GoogleDriveManager.swift */; };
+		C1A00001AAAA4001BBBB0001 /* UploadQueueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A00002AAAA4002BBBB0002 /* UploadQueueManager.swift */; };
+		C1A00003AAAA4003BBBB0003 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A00004AAAA4004BBBB0004 /* SettingsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4F39633942B64993A8F49176 /* DriveFolderPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriveFolderPickerViewModel.swift; sourceTree = "<group>"; };
+		880E8DA79FB747048FACB98F /* DriveFolderPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriveFolderPickerView.swift; sourceTree = "<group>"; };
+		9E90EB93B3414DDDB2649CD5 /* GoogleDriveManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleDriveManager.swift; sourceTree = "<group>"; };
+		A2000001 /* AutoNotatkaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoNotatkaApp.swift; sourceTree = "<group>"; };
+		A2000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A2000003 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A2000004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2000005 /* AutoNotatka.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AutoNotatka.entitlements; sourceTree = "<group>"; };
+		A2000006 /* AutoNotatka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoNotatka.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2000007 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		A200000A /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		A200000B /* RecordingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingViewModel.swift; sourceTree = "<group>"; };
+		A200000C /* RecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingView.swift; sourceTree = "<group>"; };
+		A200000D /* NotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewModel.swift; sourceTree = "<group>"; };
+		A200000E /* NotesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListView.swift; sourceTree = "<group>"; };
+		A200000F /* NoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailView.swift; sourceTree = "<group>"; };
+		A2000010 /* PermissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionManager.swift; sourceTree = "<group>"; };
+		A2000011 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		A2000012 /* LocalStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageManager.swift; sourceTree = "<group>"; };
+		A2000013 /* GoogleAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthManager.swift; sourceTree = "<group>"; };
+		A2000014 /* GoogleSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInView.swift; sourceTree = "<group>"; };
+		C1A00002AAAA4002BBBB0002 /* UploadQueueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadQueueManager.swift; sourceTree = "<group>"; };
+		C1A00004AAAA4004BBBB0004 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E0F640AD95464294AAD9C341 /* DrivePreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrivePreferences.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000010 /* GoogleSignIn in Frameworks */,
+				A1000011 /* GoogleSignInSwift in Frameworks */,
+				A1000012 /* GoogleAPIClientForRESTCore in Frameworks */,
+				A1000013 /* GoogleAPIClientForREST_Drive in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4000001 = {
+			isa = PBXGroup;
+			children = (
+				A4000002 /* AutoNotatka */,
+				A4000008 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A4000002 /* AutoNotatka */ = {
+			isa = PBXGroup;
+			children = (
+				A4000003 /* App */,
+				A4000004 /* Views */,
+				A4000005 /* ViewModels */,
+				A4000006 /* Managers */,
+				A4000007 /* Models */,
+				A4000009 /* Resources */,
+				A2000004 /* Info.plist */,
+				A2000005 /* AutoNotatka.entitlements */,
+			);
+			path = AutoNotatka;
+			sourceTree = "<group>";
+		};
+		A4000003 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A2000001 /* AutoNotatkaApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A4000004 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A2000002 /* ContentView.swift */,
+				880E8DA79FB747048FACB98F /* DriveFolderPickerView.swift */,
+				A200000C /* RecordingView.swift */,
+				A200000E /* NotesListView.swift */,
+				A200000F /* NoteDetailView.swift */,
+				A2000011 /* OnboardingView.swift */,
+				A2000014 /* GoogleSignInView.swift */,
+				C1A00004AAAA4004BBBB0004 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A4000005 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4F39633942B64993A8F49176 /* DriveFolderPickerViewModel.swift */,
+				A200000B /* RecordingViewModel.swift */,
+				A200000D /* NotesViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A4000006 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				9E90EB93B3414DDDB2649CD5 /* GoogleDriveManager.swift */,
+				A2000007 /* AudioManager.swift */,
+				A2000012 /* LocalStorageManager.swift */,
+				A2000010 /* PermissionManager.swift */,
+				A2000013 /* GoogleAuthManager.swift */,
+				C1A00002AAAA4002BBBB0002 /* UploadQueueManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		A4000007 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E0F640AD95464294AAD9C341 /* DrivePreferences.swift */,
+				A200000A /* Note.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A4000008 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2000006 /* AutoNotatka.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4000009 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A2000003 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5000001 /* AutoNotatka */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6000003 /* Build configuration list for PBXNativeTarget "AutoNotatka" */;
+			buildPhases = (
+				A3000002 /* Sources */,
+				A3000001 /* Frameworks */,
+				A3000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AutoNotatka;
+			packageProductDependencies = (
+				A9000001 /* GoogleSignIn */,
+				A9000002 /* GoogleSignInSwift */,
+				A9000003 /* GoogleAPIClientForRESTCore */,
+				A9000004 /* GoogleAPIClientForREST_Drive */,
+			);
+			productName = AutoNotatka;
+			productReference = A2000006 /* AutoNotatka.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					A5000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = A6000001 /* Build configuration list for PBXProject "AutoNotatka" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = pl;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				pl,
+				Base,
+			);
+			mainGroup = A4000001;
+			packageReferences = (
+				A9000005 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				A9000006 /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */,
+			);
+			productRefGroup = A4000008 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5000001 /* AutoNotatka */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000003 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				245772899A084599B9AEC06F /* DriveFolderPickerViewModel.swift in Sources */,
+				8761E688E2BE43E4B6A105D9 /* DriveFolderPickerView.swift in Sources */,
+				B48D5F62ADFB4689853F1F22 /* GoogleDriveManager.swift in Sources */,
+				3AE7D92020E4492C8B06F8A8 /* DrivePreferences.swift in Sources */,
+				A1000001 /* AutoNotatkaApp.swift in Sources */,
+				A1000002 /* ContentView.swift in Sources */,
+				A1000004 /* AudioManager.swift in Sources */,
+				A100000F /* LocalStorageManager.swift in Sources */,
+				A1000007 /* Note.swift in Sources */,
+				A1000008 /* RecordingViewModel.swift in Sources */,
+				A1000009 /* RecordingView.swift in Sources */,
+				A100000A /* NotesViewModel.swift in Sources */,
+				A100000B /* NotesListView.swift in Sources */,
+				A100000C /* NoteDetailView.swift in Sources */,
+				A100000D /* PermissionManager.swift in Sources */,
+				A100000E /* OnboardingView.swift in Sources */,
+				A1000014 /* GoogleAuthManager.swift in Sources */,
+				A1000015 /* GoogleSignInView.swift in Sources */,
+				C1A00001AAAA4001BBBB0001 /* UploadQueueManager.swift in Sources */,
+				C1A00003AAAA4003BBBB0003 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A8000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = DB4A3HP486;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A8000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = DB4A3HP486;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A8000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AutoNotatka/AutoNotatka.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AutoNotatka/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.autonotatka.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A8000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AutoNotatka/AutoNotatka.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AutoNotatka/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.autonotatka.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6000001 /* Build configuration list for PBXProject "AutoNotatka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8000001 /* Debug */,
+				A8000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6000003 /* Build configuration list for PBXNativeTarget "AutoNotatka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8000003 /* Debug */,
+				A8000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A9000005 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		A9000006 /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/google-api-objectivec-client-for-rest";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A9000001 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9000005 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		A9000002 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9000005 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		A9000003 /* GoogleAPIClientForRESTCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9000006 /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
+			productName = GoogleAPIClientForRESTCore;
+		};
+		A9000004 /* GoogleAPIClientForREST_Drive */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9000006 /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
+			productName = GoogleAPIClientForREST_Drive;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A7000001 /* Project object */;
+}

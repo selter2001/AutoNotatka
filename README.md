@@ -1,4 +1,4 @@
-# AutoNotatka
+# auto-voice-notes
 
 ![Swift](https://img.shields.io/badge/Swift-F05138?style=flat&logo=swift&logoColor=white)
 ![SwiftUI](https://img.shields.io/badge/SwiftUI-0071E3?style=flat&logo=swift&logoColor=white)
@@ -46,8 +46,8 @@ Professional Audio Cloud Recorder for iOS. Record high-quality .m4a audio and ha
 ### Installation
 
 ```bash
-git clone https://github.com/selter2001/AutoNotatka.git
-cd AutoNotatka
+git clone https://github.com/selter2001/auto-voice-notes.git
+cd auto-voice-notes
 ```
 
 Install dependencies via Swift Package Manager (resolved automatically by Xcode):
@@ -98,7 +98,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-# AutoNotatka
+# auto-voice-notes
 
 Profesjonalny rejestrator audio z synchronizacją chmurową dla systemu iOS. Nagrywaj audio w wysokiej jakości .m4a i automatycznie przesyłaj nagrania do wybranego folderu na Google Drive. Zaprojektowany dla profesjonalistów, którzy potrzebują niezawodnego nagrywania audio z bezproblemową kopią zapasową w chmurze — bez ręcznego zarządzania plikami.
 
@@ -140,8 +140,8 @@ Profesjonalny rejestrator audio z synchronizacją chmurową dla systemu iOS. Nag
 ### Instalacja
 
 ```bash
-git clone https://github.com/selter2001/AutoNotatka.git
-cd AutoNotatka
+git clone https://github.com/selter2001/auto-voice-notes.git
+cd auto-voice-notes
 ```
 
 Zależności instalowane przez Swift Package Manager (rozwiązywane automatycznie przez Xcode):
